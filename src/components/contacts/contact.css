@@ -1,3 +1,99 @@
 .contact {
-    
+  height: 100%;
+  display: flex;
+  gap: 100px;
+}
+
+.cSection {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+}
+
+.formItem {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-size: 13px;
+}
+
+.formButtons {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.formButton {
+  width: 50%;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sendButton {
+  background-color: #dd46c2;
+  color: whitesmoke;
+}
+
+.downloadButton {
+  color: black;
+}
+
+.downloadButton:hover {
+  background-color: #0c7a36;
+  color: whitesmoke;
+}
+
+@media (max-width: 1280px) {
+  .form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    gap: 30px;
+  }
+
+  .formButton.right {
+    height: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .cSection {
+    width: 100%;
+  }
+
+  .cSection:first-child {
+    height: 100%;
+  }
+  .cSection:last-child {
+    display: none;
+  }
 }
